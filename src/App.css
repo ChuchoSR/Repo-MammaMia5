@@ -1,0 +1,12 @@
+#root {
+    margin: 0 auto;
+    text-align: center;
+    
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-color: #212529;
+  }
