@@ -8,8 +8,8 @@ const Navbar = () => {
       <div className="brand">🍕 Pizzería Mamma Mía!</div>
       <div className="nav-links">
         <Link to="/">Home</Link>
-        <Link to="/login">Login</Link>
-        <Link to="/register">Registro</Link>
+        <Link to="/login">🔐Login</Link>
+        <Link to="/register">🔐Registro</Link>
         <Link to="/cart">🛒 Carrito</Link>
         <Link to="/profile">Perfil</Link>
       </div>

@@ -23,11 +23,67 @@ a:hover {
 }
 
 body {
-  margin: 0; 
+  margin: 0;
+  padding: 0;
   width: 100vw;
   height: 100vh;
   display: flex;
+  overflow-x: hidden;
+  
   flex-direction: column; /* Permite controlar cómo se distribuyen los hijos */
+}
+
+.card-text{
+  color: black;
+}
+
+.card{
+  margin: 0 !important;
+}
+
+.navbar{
+  padding: 0 !important;
+  height: 40px;
+  width: 100vw;
+}
+
+.brand{
+  margin-left: 10px;
+}
+
+.nav-links{
+  margin-right: 20px;
+}
+
+
+/* ////////////////////////////////HOME//////////////////////////////////// */
+
+.header{
+  width: 100vw;
+}
+
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  margin-bottom: 2rem;
+  background-color: #fff;
+}
+
+.main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.footer{
+  width: 100vw;
 }
 
 @media (prefers-color-scheme: light) {
@@ -42,3 +98,5 @@ body {
     background-color: #f9f9f9;
   }
 }
+
+

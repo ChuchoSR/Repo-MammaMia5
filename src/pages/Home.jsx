@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import CardPizza from '../components/CardPizza';
 import { fetchPizzas } from '../data/pizzas'; // Importar la función para obtener las pizzas
+import Header from '../components/Header';
 
 const Home = () => {
   const [pizzas, setPizzas] = useState([]); // Estado para las pizzas
@@ -28,24 +29,22 @@ const Home = () => {
   }
 
   return (
-    <div style={{
-      display: 'flex',
-      flexWrap: 'wrap',
-      justifyContent: 'center',
-      gap: '16px',
-      padding: '16px',
-    }}>
-      {pizzas.map((pizza) => (
-        <CardPizza
-          key={pizza.id}
-          name={pizza.name}
-          desc={pizza.desc}
-          ingredients={pizza.ingredients}
-          img={pizza.img}
-          price={pizza.price}
-        />
-      ))}
-    </div>
+    <>
+      <Header />
+      <div 
+        className='card-container'>
+          {pizzas.map((pizza) => (
+              <CardPizza
+              key={pizza.id}
+              name={pizza.name}
+              desc={pizza.desc}
+              ingredients={pizza.ingredients}
+              img={pizza.img}
+              price={pizza.price}
+            />
+          ))}
+      </div>
+    </>
   );
 };
 
